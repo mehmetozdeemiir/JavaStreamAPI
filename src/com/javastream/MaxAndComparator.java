@@ -8,7 +8,7 @@ public class MaxAndComparator {
     }
 
     //Before
-    public static Person getOldestPerson (List < Person > people) {
+    public static Person getOldestPerson (List <Person> people) {
         Person oldestPerson = new Person("", 0);
         for (Person person : people) {
             if (person.getAge() > oldestPerson.getAge()) {
@@ -19,7 +19,7 @@ public class MaxAndComparator {
     }
 
     //Stream API
-    public static Person getOldestPerson1(List < Person > people) {
+    public static Person getOldestPerson1(List<Person> people) {
          return people.stream()
                 .max(Comparator.comparingInt(Person::getAge))
                 .orElse(null); //max optional olduğu için

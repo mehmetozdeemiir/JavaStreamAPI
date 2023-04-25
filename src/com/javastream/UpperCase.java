@@ -10,7 +10,7 @@ public class UpperCase {
     //stream()= stream adında bir collention a ceviriyor. stream yapmadan diğer metodlara ulaşılamıyor. stream bir collection değildir.
 
     public static void main(String[] args) {
-        System.out.println(mapToUpperCase2("a","b","b","d"));
+        System.out.println(mapToUpperCase2("ahmet","haluk","bervan","derya"));
     }
 
     //Before
